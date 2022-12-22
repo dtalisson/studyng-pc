@@ -1,0 +1,32 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+} 
+
+.exemplo-1{ 
+        background-color: antiquewhite;
+        height: 100px;
+        width: 200vh;
+        border: 2px solid black;
+}
+.exemplo-2 { 
+    background-color: yellowgreen;
+    height: 100px;
+    width: 50vmin;
+    border: 2px solid black;
+
+
+}
+.exemplo-3 { 
+    background-color: aquamarine;
+    height: 100px;
+    border: 2px solid black;
+    width: 50vmax;
+
+}
+.exemplo-1, .exemplo-2, .exemplo-3 { 
+    font-size: 2rem;
+    text-align: center;
+}
