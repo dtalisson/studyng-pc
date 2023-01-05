@@ -1,23 +1,17 @@
 const { gets, print} = require('./funcao-auxiliar');
-const numerosSorteados = [];
+
+const quantidadeDeAlunos = gets()
+let maiorValorEncontrado = 0;
+
+for (let i = 0; i< quantidadeDeAlunos; i++) {
+  const numeroSorteado = gets();       // ta chamando o gets que no caso seria a entrada da funcao auxiliar 
+  if ( numeroSorteado > maiorValorEncontrado) {    // caso o numeroSorteado da vez for maior que o maior valor encontrado 
+    maiorValorEncontrado = numeroSorteado           // o maiorvalor encontrado vai passar a ser o maior numerosorteado
+  }
 
 
-
-for (let i = 0; i < 5; i++) {
-    const numeroSorteado = gets();
-    numerosSorteados.push(numeroSorteado)
-}
-
-let maiorValor = 0;
-
-
-for (let i = 0; i < numerosSorteados.length; i++) {
-    const numeroSorteado = numerosSorteados[i];
-     if ( numeroSorteado > maiorValor) { 
-        maiorValor = numeroSorteado;
-     }
 
 
 }
 
-print(maiorValor)
+print(maiorValorEncontrado)             // aqui vai ser impresso o maior numero que o sistema achou na entrada
